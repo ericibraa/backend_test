@@ -1,4 +1,4 @@
-# Bioskop API
+²# Bioskop API
 
 API ini dibuat untuk mengelola informasi film, studio bioskop, waktu tayang, dan pemesanan tiket. API ini dibangun menggunakan Node.js, Express.js, Sequelize, Validator, dan MySQL.
 
@@ -28,6 +28,22 @@ Sebelum memulai, pastikan Anda memiliki hal-hal berikut:
 
 1. **Clone repositori ini:**
 
-   git clone <repository-url>
-   cd bioskop-api
-   npm install
+- git clone <repository-url>
+- cd bioskop-api
+- npm install
+
+## Konfigurasi Config ke MySql
+
+Buatlah folder dengan nama config, lalu buat file dengan nama config.json untuk menghubungkan api ke mysql.
+
+contoh config.json :
+
+{
+  "development": {
+    "username": "your_username",
+    "password": "your_password",
+    "database": "your_database",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
